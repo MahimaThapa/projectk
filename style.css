@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito',sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+li a {
+    position: relative;
+
+}
+
+li a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: rgb(19, 184, 19);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+#search-icon {
+    height: 30px;
+    width: 30px;
+    line-height: 1.8rem;
+    margin: 5px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgb(19, 184, 19);
+}
+
+.search {
+    text-decoration: none;
+    color: black;
+}
+
+.search:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+    color: white
+}
+
+#heart-icon {
+    height: 30px;
+    width: 30px;
+    line-height: 1.8rem;
+    margin: 5px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgb(19, 184, 19);
+}
+
+.hearticon {
+    text-decoration: none;
+    color: black;
+}
+
+.hearticon:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+    color: white
+}
+
+#cart-icon {
+    height: 30px;
+    width: 30px;
+    line-height: 1.8rem;
+    margin: 5px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgb(19, 184, 19);
+}
+
+.cart {
+    text-decoration: none;
+    color: black;
+}
+
+.cart:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+    color: white
+}
+
+#search-form {
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: 1004;
+}
+
+#search-form.active {
+    top: 0
+}
+
+#search-form #search-box {
+    width: 30rem;
+    border-bottom: 0.1rem solid white;
+    padding: 0.5rem 0;
+    color: #fff;
+    font-size: 18px;
+    text-transform: none;
+    background: none;
+}
+
+#search-form #search-box::placeholder {
+    color: #eee;
+
+}
+
+#search-form label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#search-form label:hover {
+    color: rgb(19, 184, 19)
+}
+
+#search-form #close {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 40px;
+}
+nav.navbar{
+        box-shadow: 0px 0px 10px 0px gray;
+}
+
+#img-1 {
+    float: right;
+    
+}
+.carousel-indicators button{display: none;}
+.heading-1 {
+    color: rgb(19, 184, 19);
+    padding: 7rem 8rem 0rem 8rem;
+    font-size: 24px;
+
+}
+
+.heading-2 {
+    color: rgb(248, 87, 28);
+    font-size: 50px;
+    padding: 0rem 8rem 1rem 8rem
+}
+
+.para-1 {
+    padding: 0rem 8rem;
+
+}
+
+.button-2 {
+    color: white;
+    background-color: rgb(248, 87, 28);
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0.8rem 8rem;
+
+}
+
+.button-2:hover {
+    background-color: rgb(19, 184, 19);
+    color: white;
+}
+
+
+.sub-head{
+    text-align: center;
+    color:rgb(19, 184, 19);
+    font-size: 28px;
+    padding-top: 1.5rem;
+}
+.heading{
+    text-align: center;
+    color:rgb(248, 87, 28);
+    font-size: 36px;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+div .dishes-img{
+    border:1px solid #ccc;
+}
+
+div .dishes-img:hover{
+    border:1 px solid #777;
+}
+
+div .dishes-img img{
+    width:100%;
+    height: auto;
+}
+
+.dishes-box{
+    padding: 0 6px;
+    float: left;
+    width:33.333%; 
+    
+} 
+
+
+
+.dishes-box .dishes-img{
+    padding:1rem;
+    background: #fff;
+    border-radius:.5rem;
+    border:0.1rem solid #000;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+    margin:.5rem;
+    
+}
+
+ .dishes-box .dishes-img .fa-heart,
+ .dishes-box .dishes-img .fa-eye{
+    position: absolute;
+    top:1.5rem;
+    background: rgb(212, 210, 210);
+    border-radius:50%;
+    height:2.5rem;
+    width:2.5rem;
+    line-height:2.5rem;
+    font-size:1.3rem;
+    color:black;
+    text-decoration:none;
+}
+
+.dishes-box .dishes-img .fa-heart{
+    right:-15rem;
+
+}
+
+.dishes-box .dishes-img .fa-eye{
+    left:-15rem
+}
+
+
+
+.dishes-box .dishes-img .fa-heart:hover,
+.dishes-box .dishes-img .fa-eye:hover{
+    background: rgb(19, 184, 19);
+    color:#fff;
+}
+
+
+.dishes-box .dishes-img:hover .fa-heart{
+right:1.5rem
+}
+
+.dishes-box .dishes-img:hover .fa-eye{
+    left:1.5rem
+}
+
+.dishes-box h3{
+    font-size: 2rem;
+}
+.dishes-box .stars{
+padding: 1rem 0;
+;
+}
+.dishes-box .stars{
+    color:rgb(19, 184, 19)
+}
+.dihes-box span{
+    color:rgb(19, 184, 19);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.dishes-box .btn{
+    color: white;
+    background-color: rgb(248, 87, 28);
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    margin: 0.2rem 1rem;
+
+}
+.dishes-box .btn:hover{
+    background: rgb(19, 184, 19);
+    color:white;
+}
+.button-3{
+    color: white;
+    background-color: rgb(248, 87, 28);
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    margin: 0.2rem 1rem;
+}
+
+.button-3:hover{
+    background: rgb(19, 184, 19);
+    color:white;
+}
+
+.about-us{
+    display:flex;
+    align-items: center;
+    width:85%;
+    margin: auto ;
+}
+
+.about-us img{
+    flex: 0 50%;
+    max-width: 50%;
+    height: auto;
+}
+.content{
+    padding: 35px;
+    ;
+}
+
+
+
+
+.icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap:1rem;
+}
+
+.icons-container .icons{
+
+
+border-radius: .5rem;
+border: 0.2rem solid rgb(80, 76, 76);
+display: flex;
+align-items: center;
+background-color: rgb(43, 42, 42);
+justify-content: center;
+
+
+}
+.icons-container .icons span{
+    font-size: 14px;
+    color:#000;
+    padding:4px;
+    color:white
+    ;
+}
+.icons-container .icons i{
+    color:rgb(19, 184, 19);
+}
+
+
+
+div .gallery{
+    border:1px solid #ccc;
+}
+
+div .gallery:hover{
+    border:1 px solid #777;
+}
+
+div .gallery img{
+    width:100%;
+    height: auto;
+}
+
+.menu-img{
+    padding: 0 6px;
+    float: left;
+    width:33.333%; 
+    
+}   
+.button-4{
+    color: white;
+    background-color: rgb(248, 87, 28);
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    margin: 0.1rem 0rem;
+}
+
+.button-4:hover{
+    background: rgb(19, 184, 19);
+    color:white;
+}
+
+
+.card{
+    width: 100%;
+    height:250px;
+    align-items: center;
+    background-color: rgb(151, 21, 21);
+    padding:0px;
+    
+}
+.card-box img{
+
+border-radius: 50%
+}
+
+.card-box h2{
+    font-size:24px
+}
+.card p{
+    font-size: 15px;
+    text-align:center;
+}
+form{
+
+width:85%;
+border-radius: .5rem;
+border:.4rem solid rgb(66, 160, 29);
+background: #fff;
+padding:1.5rem;
+margin:0 auto;
+
+}
+
+form .inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .inputbox .input{
+
+width:48%
+
+}
+
+form .inputbox .input span{
+    display: block;
+padding: .5rem 0;
+font-size: 1.2rem;
+}
+form .inputbox .input input,
+form .inputbox .input textarea{
+    background: #eee;
+    border-radius:.5rem;
+    padding:.5rem;
+    font-size:1rem;
+    text-transform:none;
+    margin-bottom:1rem;
+    width:100%;
+}
+form .inputbox .input textarea{
+    height:15rem;
+    resize: none;
+}
+
+.footer .footer-container{
+    display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(20rem,1fr)); 
+text-align: center;
+margin-top: 40px;
+background-color: rgb(120, 247, 120); 
+
+}
+
+.footer .footer-container .box h4{
+    padding:.5rem 0;
+    font-size: 20px;
+    color:rgb(12, 12, 51)
+}
+
+.footer .footer-container .box a{
+    display: block;
+    padding:.4rem 0;
+    text-decoration: none;
+    color:black
+}
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0);
+    font-size: 16px;
+    padding:.5rem;
+    
+}
+.footer .credit span{
+    color:rgb(6, 158, 6)
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:rgb(6, 158, 6);
+    opacity: 0.8;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(248, 87, 28) ;}
+
+
+
+/* media queries */
+
+@media screen and (max-width:600px) {
+
+    #img-1 {
+        float: none;
+        margin: auto;
+    }
+    
+
+    .heading-1 {
+        color: rgb(19, 184, 19);
+        padding: 1.4rem 0rem 0rem 1.4rem;
+        font-size: 24px;
+    }
+
+    .heading-2 {
+        color: rgb(248, 87, 28);
+        font-size: 44px;
+        padding: 0rem 0rem 0rem 1.4rem
+    }
+
+    .para-1 {
+        padding: 0rem 1.4rem;
+        font-size: 20px;
+
+    }
+
+    .button-2 {
+        color: white;
+        background-color: rgb(248, 87, 28);
+        display: inline-block;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0.6rem 1.2rem;
+        margin: 0.5rem 1.4rem
+    }
+    .dishes-box{
+        height:auto;
+        width:100%;
+        
+    }
+
+    .about-us{
+        flex-direction: column;
+
+    }
+     .about-us img{
+        flex: 0 100%;
+        max-width: 100%;
+     }
+      
+     .content{
+        flex:0 100%;
+        max-width: 100%;
+        padding: 15px;
+     }
+     .menu-img{
+    
+        width:100%; 
+        
+    }
+
+    form .inputbox .input{
+
+        width:100%
+        
+        }
+        
+
+
+
+}
+
+
+@media screen and (min-width:600px) and (max-width:768px) {
+
+    #img-1 {
+        float: none;
+        margin: auto;
+    }
+
+    .heading-1 {
+        color: rgb(19, 184, 19);
+        padding: 1.4rem 0rem 0rem 1.4rem;
+        font-size: 28px;
+    }
+
+    .heading-2 {
+        color: rgb(248, 87, 28);
+        font-size: 48px;
+        padding: 0rem 0rem 0rem 1.4rem
+    }
+
+    .para-1 {
+        padding: 0rem 1.4rem;
+        font-size: 24px;
+
+    }
+    .button-2 {
+        color: white;
+        background-color: rgb(248, 87, 28);
+        display: inline-block;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 22px;
+        padding: 0.6rem 1.2rem;
+        margin: 0.5rem 1.4rem
+    }
+
+    .box img{
+        height:auto;
+        width:100%
+    }
+    .about-us{
+        flex-direction: column;
+
+    }
+     .about-us img{
+        flex: 0 100%;
+        max-width: 100%;
+     }
+      
+     .content{
+        flex:0 100%;
+        max-width: 100%;
+        padding: 15px;
+     }
+
+     .menu-img{
+    
+        width:49.9999%; 
+        margin:6px 0;
+        
+    }
+ 
+    .card{
+        width: 80%;
+        height:250px;
+        align-items: center;
+        background-color: rgb(151, 21, 21);
+        
+        margin:10px
+    }
+    .card-box img{
+    
+    border-radius: 50%
+    }
+    
+    .card-box h2{
+        font-size:28px
+    }
+    .card p{
+        font-size: 18px;
+        text-align:center;
+    
+    }
+    
+
+    form .inputbox .input{
+
+        width:100%
+        
+        }
+       
+
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    #img-1 {
+        float: none;
+        margin: auto;
+    }
+
+    .heading-1 {
+        color: rgb(19, 184, 19);
+        padding: 1.6rem 0rem 0rem 1.6rem;
+        font-size: 30px;
+    }
+
+    .heading-2 {
+        color: rgb(248, 87, 28);
+        font-size: 50px;
+        padding: 0rem 0rem 0rem 1.6rem
+    }
+
+    .para-1 {
+        padding: 0rem 1.6rem;
+        font-size: 26px;
+
+    }
+    .button-2 {
+        color: white;
+        background-color: rgb(248, 87, 28);
+        display: inline-block;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size:25px;
+        padding: 0.6rem 1.2rem;
+        margin: 0.5rem 1.6rem
+    }
+    .box img{
+        height:auto;
+        width:100%
+    }
+    form .inputbox .input{
+
+        width:100%
+        
+        }
+        
+.card{
+    width: 100%;
+    height:250px;
+    align-items: center;
+    background-color: rgb(151, 21, 21);
+    margin: auto;
+}
+.card-box img{
+
+border-radius: 50%
+}
+
+.card-box h2{
+    font-size:24px
+}
+.card p{
+    font-size: 19px;
+    text-align:center;
+    padding: 0px 20px;
+}
+
+        
+}
